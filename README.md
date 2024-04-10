@@ -1,2 +1,1 @@
-# pillow-checkout
-BeMyMood Pillow Meta Campaign
+# checkout-test

@@ -1,0 +1,1981 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>Checkout Pillows</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/8.4.6/css/intlTelInput.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+        integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-conta">
+
+            <h2> ORDINA ORA, <span>PAGHI ALLA CONSEGNA</span></h2>
+        </div>
+    </header>
+    <section id="hero-banner">
+        <div class="content-wrapper">
+            <h1>SCEGLI LE QUANTITÀ</h1>
+            <form action="" id="pillowCheckoutForm" class="pillow-checkout-page" method="POST">
+                <!-- Radio Buttons -->
+                <div class="pillowType">
+                    <label class="radio-conta" for="memory_pillow">
+                        <input type="radio" name="pillowType" id="memory_pillow" value="Cuscino_Memory" checked>
+                        <span class="radio-box"></span>
+                        <span class="radio-lable">MEMORY</span>
+                        <img src="./normal-cusion.png" alt="Memory" width="55">
+                    </label>
+                    <label class="radio-conta" for="organic_memory_pillow">
+                        <input type="radio" name="pillowType" id="organic_memory_pillow" value="Cuscino_Memory_Bio">
+                        <span class="radio-box"></span>
+                        <span class="radio-lable">MEMORY BIO (+5€)</span>
+                        <img src="./bio-cusion.png" alt="Memory Bio">
+                    </label>
+                </div>
+
+                <div class="two-col">
+                    <h2 class="top-title">SCEGLI LA QUANTITÀ:</h2> 
+                    <div class="show-more-button hide">
+                    <button id="showMoreDropdown" >
+                        <span>Mostra di più</span>
+                        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0.5" y="0.5" width="20" height="20" rx="10" fill="#2F382F" />
+                            <g clip-path="url(#clip0_2720_470)">
+                                <path
+                                    d="M7.0575 7.80042L10.5 11.4262L13.9425 7.80042L15 8.91666L10.5 13.6667L6 8.91666L7.0575 7.80042Z"
+                                    fill="white" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_2720_470">
+                                    <rect width="18" height="19" fill="white" transform="translate(1.5 1)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                </div> 
+                </div>
+
+                <!-- radio for Cuscino Memory Quantities -->
+                <div class="cuscinoMemory_quantity quantity-containers ">
+                    <div class="quantity_checkboxes mb20">
+                        <input type="radio" name="quantityMemory" id="cmq_3x" value="99.00" data-discount="70"
+                        data-pillow="Cuscini Memory" data-quantity="3">
+                        <span class="radio-box"></span>
+                        <label for="cmq_3x">
+                            <div class="boxTopRow">
+                                <p class="box_title"> 3 Cuscini Memory</p>
+                            </div>
+                            <div class="main-wrap">
+                                <div class="main_conta">
+                                    <div class="image_col">
+                                        <img src="./3xMemory3.png" alt="Three Memory Pillow" width="">
+                                    </div>
+                                    <div class="pricing_details">
+                                        <p class="price_after_discount">29.70€ a cuscino <span class="original_price">99
+                                                €</span></p>
+                                        <p class="total_price">Totale: <strong>89.00€</strong>
+                                            <span class="discount_conta">-70%</span></p>
+                                    </div>
+                                </div>
+                                <div class="bottom_wrap">
+                                    <ul>
+                                        <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <g clip-path="url(#clip0_1220_2165)">
+                                                    <path
+                                                        d="M18.0002 6.99997L16.5902 5.58997L10.2502 11.93L11.6602 13.34L18.0002 6.99997ZM22.2402 5.58997L11.6602 16.17L7.48016 12L6.07016 13.41L11.6602 19L23.6602 6.99997L22.2402 5.58997ZM0.410156 13.41L6.00016 19L7.41016 17.59L1.83016 12L0.410156 13.41Z"
+                                                        fill="#3FB02C" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1220_2165">
+                                                        <rect width="24" height="24" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            <span>Dispositivo Medico classe 1 🇮🇹</span></li>
+                                        <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <g clip-path="url(#clip0_1220_2165)">
+                                                    <path
+                                                        d="M18.0002 6.99997L16.5902 5.58997L10.2502 11.93L11.6602 13.34L18.0002 6.99997ZM22.2402 5.58997L11.6602 16.17L7.48016 12L6.07016 13.41L11.6602 19L23.6602 6.99997L22.2402 5.58997ZM0.410156 13.41L6.00016 19L7.41016 17.59L1.83016 12L0.410156 13.41Z"
+                                                        fill="#3FB02C" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1220_2165">
+                                                        <rect width="24" height="24" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            <span>Ripristina la curvatura cervicale</span></li>
+                                        <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <g clip-path="url(#clip0_1220_2165)">
+                                                    <path
+                                                        d="M18.0002 6.99997L16.5902 5.58997L10.2502 11.93L11.6602 13.34L18.0002 6.99997ZM22.2402 5.58997L11.6602 16.17L7.48016 12L6.07016 13.41L11.6602 19L23.6602 6.99997L22.2402 5.58997ZM0.410156 13.41L6.00016 19L7.41016 17.59L1.83016 12L0.410156 13.41Z"
+                                                        fill="#3FB02C" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1220_2165">
+                                                        <rect width="24" height="24" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            <span>Anallergico, antibatterico e antimuffa</span></li>
+                                    </ul>
+                                    <div class="ratings_wrap">
+                                        <div class="stars">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+                                                viewBox="0 0 20 21" fill="none">
+                                                <g clip-path="url(#clip0_1224_662)">
+                                                    <rect width="20" height="20" transform="translate(0 0.5)"
+                                                        fill="#00B67A" />
+                                                    <path
+                                                        d="M10.0003 14.8916L15.1503 18L13.7837 12.1416L18.3337 8.19996L12.342 7.69163L10.0003 2.16663L7.65866 7.69163L1.66699 8.19996L6.21699 12.1416L4.85033 18L10.0003 14.8916Z"
+                                                        fill="white" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1224_662">
+                                                        <rect width="20" height="20" fill="white"
+                                                            transform="translate(0 0.5)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+                                                viewBox="0 0 20 21" fill="none">
+                                                <g clip-path="url(#clip0_1224_662)">
+                                                    <rect width="20" height="20" transform="translate(0 0.5)"
+                                                        fill="#00B67A" />
+                                                    <path
+                                                        d="M10.0003 14.8916L15.1503 18L13.7837 12.1416L18.3337 8.19996L12.342 7.69163L10.0003 2.16663L7.65866 7.69163L1.66699 8.19996L6.21699 12.1416L4.85033 18L10.0003 14.8916Z"
+                                                        fill="white" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1224_662">
+                                                        <rect width="20" height="20" fill="white"
+                                                            transform="translate(0 0.5)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+                                                viewBox="0 0 20 21" fill="none">
+                                                <g clip-path="url(#clip0_1224_662)">
+                                                    <rect width="20" height="20" transform="translate(0 0.5)"
+                                                        fill="#00B67A" />
+                                                    <path
+                                                        d="M10.0003 14.8916L15.1503 18L13.7837 12.1416L18.3337 8.19996L12.342 7.69163L10.0003 2.16663L7.65866 7.69163L1.66699 8.19996L6.21699 12.1416L4.85033 18L10.0003 14.8916Z"
+                                                        fill="white" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1224_662">
+                                                        <rect width="20" height="20" fill="white"
+                                                            transform="translate(0 0.5)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+                                                viewBox="0 0 20 21" fill="none">
+                                                <g clip-path="url(#clip0_1224_662)">
+                                                    <rect width="20" height="20" transform="translate(0 0.5)"
+                                                        fill="#00B67A" />
+                                                    <path
+                                                        d="M10.0003 14.8916L15.1503 18L13.7837 12.1416L18.3337 8.19996L12.342 7.69163L10.0003 2.16663L7.65866 7.69163L1.66699 8.19996L6.21699 12.1416L4.85033 18L10.0003 14.8916Z"
+                                                        fill="white" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1224_662">
+                                                        <rect width="20" height="20" fill="white"
+                                                            transform="translate(0 0.5)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+                                                viewBox="0 0 20 21" fill="none">
+                                                <g clip-path="url(#clip0_1224_662)">
+                                                    <rect width="20" height="20" transform="translate(0 0.5)"
+                                                        fill="#00B67A" />
+                                                    <path
+                                                        d="M10.0003 14.8916L15.1503 18L13.7837 12.1416L18.3337 8.19996L12.342 7.69163L10.0003 2.16663L7.65866 7.69163L1.66699 8.19996L6.21699 12.1416L4.85033 18L10.0003 14.8916Z"
+                                                        fill="white" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1224_662">
+                                                        <rect width="20" height="20" fill="white"
+                                                            transform="translate(0 0.5)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                        <p>4,8 su Trustpilot</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="quantity_checkboxes mb20">
+                        <input type="radio" name="quantityMemory" id="cmq_2x" value="99.00" data-discount="65"
+                            data-pillow="Cuscino Memory" data-quantity="2">
+                        <span class="radio-box"></span>
+                        <label for="cmq_2x">
+                            <div class="boxTopRow">
+                                <p class="box_title">2 Cuscini Memory</p>
+                            </div>
+                            <div class="main-wrap">
+                                <div class="main_conta">
+                                    <div class="image_col">
+                                        <img src="./3xMemory2.png" alt="Single Memory Pillow" width="">
+                                    </div>
+                                    <div class="pricing_details"> 
+                                        <p class="price_after_discount">34.50€ a cuscino <span class="original_price">99
+                                                €</span></p>
+                                        <p class="total_price">Totale: <strong>69.00€</strong>
+                                            <span class="discount_conta">-65%</span></p>
+                                    </div>
+                                </div>
+                                <div class="bottom_wrap">
+                                    <ul>
+                                        <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <g clip-path="url(#clip0_1220_2165)">
+                                                    <path
+                                                        d="M18.0002 6.99997L16.5902 5.58997L10.2502 11.93L11.6602 13.34L18.0002 6.99997ZM22.2402 5.58997L11.6602 16.17L7.48016 12L6.07016 13.41L11.6602 19L23.6602 6.99997L22.2402 5.58997ZM0.410156 13.41L6.00016 19L7.41016 17.59L1.83016 12L0.410156 13.41Z"
+                                                        fill="#3FB02C" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1220_2165">
+                                                        <rect width="24" height="24" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            <span>Dispositivo Medico classe 1 🇮🇹</span></li>
+                                        <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <g clip-path="url(#clip0_1220_2165)">
+                                                    <path
+                                                        d="M18.0002 6.99997L16.5902 5.58997L10.2502 11.93L11.6602 13.34L18.0002 6.99997ZM22.2402 5.58997L11.6602 16.17L7.48016 12L6.07016 13.41L11.6602 19L23.6602 6.99997L22.2402 5.58997ZM0.410156 13.41L6.00016 19L7.41016 17.59L1.83016 12L0.410156 13.41Z"
+                                                        fill="#3FB02C" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1220_2165">
+                                                        <rect width="24" height="24" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            <span>Ripristina la curvatura cervicale</span></li>
+                                        <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <g clip-path="url(#clip0_1220_2165)">
+                                                    <path
+                                                        d="M18.0002 6.99997L16.5902 5.58997L10.2502 11.93L11.6602 13.34L18.0002 6.99997ZM22.2402 5.58997L11.6602 16.17L7.48016 12L6.07016 13.41L11.6602 19L23.6602 6.99997L22.2402 5.58997ZM0.410156 13.41L6.00016 19L7.41016 17.59L1.83016 12L0.410156 13.41Z"
+                                                        fill="#3FB02C" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1220_2165">
+                                                        <rect width="24" height="24" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            <span>Anallergico, antibatterico e antimuffa</span></li>
+                                    </ul>
+                                    <div class="ratings_wrap">
+                                        <div class="stars">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+                                                viewBox="0 0 20 21" fill="none">
+                                                <g clip-path="url(#clip0_1224_662)">
+                                                    <rect width="20" height="20" transform="translate(0 0.5)"
+                                                        fill="#00B67A" />
+                                                    <path
+                                                        d="M10.0003 14.8916L15.1503 18L13.7837 12.1416L18.3337 8.19996L12.342 7.69163L10.0003 2.16663L7.65866 7.69163L1.66699 8.19996L6.21699 12.1416L4.85033 18L10.0003 14.8916Z"
+                                                        fill="white" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1224_662">
+                                                        <rect width="20" height="20" fill="white"
+                                                            transform="translate(0 0.5)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+                                                viewBox="0 0 20 21" fill="none">
+                                                <g clip-path="url(#clip0_1224_662)">
+                                                    <rect width="20" height="20" transform="translate(0 0.5)"
+                                                        fill="#00B67A" />
+                                                    <path
+                                                        d="M10.0003 14.8916L15.1503 18L13.7837 12.1416L18.3337 8.19996L12.342 7.69163L10.0003 2.16663L7.65866 7.69163L1.66699 8.19996L6.21699 12.1416L4.85033 18L10.0003 14.8916Z"
+                                                        fill="white" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1224_662">
+                                                        <rect width="20" height="20" fill="white"
+                                                            transform="translate(0 0.5)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+                                                viewBox="0 0 20 21" fill="none">
+                                                <g clip-path="url(#clip0_1224_662)">
+                                                    <rect width="20" height="20" transform="translate(0 0.5)"
+                                                        fill="#00B67A" />
+                                                    <path
+                                                        d="M10.0003 14.8916L15.1503 18L13.7837 12.1416L18.3337 8.19996L12.342 7.69163L10.0003 2.16663L7.65866 7.69163L1.66699 8.19996L6.21699 12.1416L4.85033 18L10.0003 14.8916Z"
+                                                        fill="white" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1224_662">
+                                                        <rect width="20" height="20" fill="white"
+                                                            transform="translate(0 0.5)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+                                                viewBox="0 0 20 21" fill="none">
+                                                <g clip-path="url(#clip0_1224_662)">
+                                                    <rect width="20" height="20" transform="translate(0 0.5)"
+                                                        fill="#00B67A" />
+                                                    <path
+                                                        d="M10.0003 14.8916L15.1503 18L13.7837 12.1416L18.3337 8.19996L12.342 7.69163L10.0003 2.16663L7.65866 7.69163L1.66699 8.19996L6.21699 12.1416L4.85033 18L10.0003 14.8916Z"
+                                                        fill="white" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1224_662">
+                                                        <rect width="20" height="20" fill="white"
+                                                            transform="translate(0 0.5)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+                                                viewBox="0 0 20 21" fill="none">
+                                                <g clip-path="url(#clip0_1224_662)">
+                                                    <rect width="20" height="20" transform="translate(0 0.5)"
+                                                        fill="#00B67A" />
+                                                    <path
+                                                        d="M10.0003 14.8916L15.1503 18L13.7837 12.1416L18.3337 8.19996L12.342 7.69163L10.0003 2.16663L7.65866 7.69163L1.66699 8.19996L6.21699 12.1416L4.85033 18L10.0003 14.8916Z"
+                                                        fill="white" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1224_662">
+                                                        <rect width="20" height="20" fill="white"
+                                                            transform="translate(0 0.5)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                        <p>4,8 su Trustpilot</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="quantity_checkboxes mb20">
+                        <input type="radio" name="quantityMemory" id="cmq_1x" value="99.00" data-discount="50"
+                            data-pillow="Cuscino Memory" data-quantity="1">  
+                        <span class="radio-box"></span>
+                        <label for="cmq_1x">
+                            <div class="boxTopRow">
+                                <p class="box_title">1 Cuscini Memory</p>
+                            </div>
+                            <div class="main-wrap">
+                                <div class="main_conta">
+                                    <div class="image_col">
+                                        <img src="./3xMemory1.png" alt="Single Memory Pillow" width="">
+                                    </div>
+                                    <div class="pricing_details">
+                                        <p class="price_after_discount">49.00€ a cuscino <span class="original_price">99
+                                                €</span></p>
+                                        <p class="total_price">Totale: <strong>49.00€</strong>
+                                            <span class="discount_conta">-50%</span></p>
+                                    </div>
+                                </div>
+                                <div class="bottom_wrap">
+                                    <ul>
+                                        <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <g clip-path="url(#clip0_1220_2165)">
+                                                    <path
+                                                        d="M18.0002 6.99997L16.5902 5.58997L10.2502 11.93L11.6602 13.34L18.0002 6.99997ZM22.2402 5.58997L11.6602 16.17L7.48016 12L6.07016 13.41L11.6602 19L23.6602 6.99997L22.2402 5.58997ZM0.410156 13.41L6.00016 19L7.41016 17.59L1.83016 12L0.410156 13.41Z"
+                                                        fill="#3FB02C" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1220_2165">
+                                                        <rect width="24" height="24" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            <span>Dispositivo Medico classe 1 🇮🇹</span></li>
+                                        <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <g clip-path="url(#clip0_1220_2165)">
+                                                    <path
+                                                        d="M18.0002 6.99997L16.5902 5.58997L10.2502 11.93L11.6602 13.34L18.0002 6.99997ZM22.2402 5.58997L11.6602 16.17L7.48016 12L6.07016 13.41L11.6602 19L23.6602 6.99997L22.2402 5.58997ZM0.410156 13.41L6.00016 19L7.41016 17.59L1.83016 12L0.410156 13.41Z"
+                                                        fill="#3FB02C" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1220_2165">
+                                                        <rect width="24" height="24" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            <span>Ripristina la curvatura cervicale</span></li>
+                                        <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <g clip-path="url(#clip0_1220_2165)">
+                                                    <path
+                                                        d="M18.0002 6.99997L16.5902 5.58997L10.2502 11.93L11.6602 13.34L18.0002 6.99997ZM22.2402 5.58997L11.6602 16.17L7.48016 12L6.07016 13.41L11.6602 19L23.6602 6.99997L22.2402 5.58997ZM0.410156 13.41L6.00016 19L7.41016 17.59L1.83016 12L0.410156 13.41Z"
+                                                        fill="#3FB02C" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1220_2165">
+                                                        <rect width="24" height="24" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            <span>Anallergico, antibatterico e antimuffa</span></li>
+                                    </ul>
+                                    <div class="ratings_wrap">
+                                        <div class="stars">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+                                                viewBox="0 0 20 21" fill="none">
+                                                <g clip-path="url(#clip0_1224_662)">
+                                                    <rect width="20" height="20" transform="translate(0 0.5)"
+                                                        fill="#00B67A" />
+                                                    <path
+                                                        d="M10.0003 14.8916L15.1503 18L13.7837 12.1416L18.3337 8.19996L12.342 7.69163L10.0003 2.16663L7.65866 7.69163L1.66699 8.19996L6.21699 12.1416L4.85033 18L10.0003 14.8916Z"
+                                                        fill="white" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1224_662">
+                                                        <rect width="20" height="20" fill="white"
+                                                            transform="translate(0 0.5)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+                                                viewBox="0 0 20 21" fill="none">
+                                                <g clip-path="url(#clip0_1224_662)">
+                                                    <rect width="20" height="20" transform="translate(0 0.5)"
+                                                        fill="#00B67A" />
+                                                    <path
+                                                        d="M10.0003 14.8916L15.1503 18L13.7837 12.1416L18.3337 8.19996L12.342 7.69163L10.0003 2.16663L7.65866 7.69163L1.66699 8.19996L6.21699 12.1416L4.85033 18L10.0003 14.8916Z"
+                                                        fill="white" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1224_662">
+                                                        <rect width="20" height="20" fill="white"
+                                                            transform="translate(0 0.5)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+                                                viewBox="0 0 20 21" fill="none">
+                                                <g clip-path="url(#clip0_1224_662)">
+                                                    <rect width="20" height="20" transform="translate(0 0.5)"
+                                                        fill="#00B67A" />
+                                                    <path
+                                                        d="M10.0003 14.8916L15.1503 18L13.7837 12.1416L18.3337 8.19996L12.342 7.69163L10.0003 2.16663L7.65866 7.69163L1.66699 8.19996L6.21699 12.1416L4.85033 18L10.0003 14.8916Z"
+                                                        fill="white" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1224_662">
+                                                        <rect width="20" height="20" fill="white"
+                                                            transform="translate(0 0.5)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+                                                viewBox="0 0 20 21" fill="none">
+                                                <g clip-path="url(#clip0_1224_662)">
+                                                    <rect width="20" height="20" transform="translate(0 0.5)"
+                                                        fill="#00B67A" />
+                                                    <path
+                                                        d="M10.0003 14.8916L15.1503 18L13.7837 12.1416L18.3337 8.19996L12.342 7.69163L10.0003 2.16663L7.65866 7.69163L1.66699 8.19996L6.21699 12.1416L4.85033 18L10.0003 14.8916Z"
+                                                        fill="white" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1224_662">
+                                                        <rect width="20" height="20" fill="white"
+                                                            transform="translate(0 0.5)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+                                                viewBox="0 0 20 21" fill="none">
+                                                <g clip-path="url(#clip0_1224_662)">
+                                                    <rect width="20" height="20" transform="translate(0 0.5)"
+                                                        fill="#00B67A" />
+                                                    <path
+                                                        d="M10.0003 14.8916L15.1503 18L13.7837 12.1416L18.3337 8.19996L12.342 7.69163L10.0003 2.16663L7.65866 7.69163L1.66699 8.19996L6.21699 12.1416L4.85033 18L10.0003 14.8916Z"
+                                                        fill="white" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1224_662">
+                                                        <rect width="20" height="20" fill="white"
+                                                            transform="translate(0 0.5)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                        <p>4,8 su Trustpilot</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- radio for Cuscino Memory Bio Quantities -->
+                <div class="cuscinoMemoryBio_quantity quantity-containers hide">
+                    <div class="quantity_checkboxes mb20">
+                        <input type="radio" name="quantityMemoryBio" id="cmbq_3x" value="109.00" data-discount="70"
+                            data-pillow="Cuscini Memory Bio" data-quantity="3">
+                        <span class="radio-box"></span>
+                        <label for="cmbq_3x">
+                            <div class="boxTopRow">
+                                <p class="box_title">3 Cuscini Memory Bio</p>
+                            </div>
+                            <div class="main-wrap">
+                                <div class="main_conta">
+                                    <div class="image_col">
+                                        <img src="./3xBioCusion3.png" alt="Three Pillows" width="">
+                                    </div>
+                                    <div class="pricing_details">   
+                                        <p class="price_after_discount">32.70€ a cuscino<span 
+                                                class="original_price">109
+                                                €</span></p>
+                                        <p class="total_price">Totale: <strong>98.00€</strong>
+                                            <span class="discount_conta">-70%</span></p>
+                                    </div>
+                                </div>
+                                <div class="bottom_wrap">
+                                    <ul>
+                                        <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <g clip-path="url(#clip0_1220_2165)">
+                                                    <path
+                                                        d="M18.0002 6.99997L16.5902 5.58997L10.2502 11.93L11.6602 13.34L18.0002 6.99997ZM22.2402 5.58997L11.6602 16.17L7.48016 12L6.07016 13.41L11.6602 19L23.6602 6.99997L22.2402 5.58997ZM0.410156 13.41L6.00016 19L7.41016 17.59L1.83016 12L0.410156 13.41Z"
+                                                        fill="#3FB02C" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1220_2165">
+                                                        <rect width="24" height="24" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            <span>Dispositivo Medico classe 1 🇮🇹</span></li>
+                                        <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <g clip-path="url(#clip0_1220_2165)">
+                                                    <path
+                                                        d="M18.0002 6.99997L16.5902 5.58997L10.2502 11.93L11.6602 13.34L18.0002 6.99997ZM22.2402 5.58997L11.6602 16.17L7.48016 12L6.07016 13.41L11.6602 19L23.6602 6.99997L22.2402 5.58997ZM0.410156 13.41L6.00016 19L7.41016 17.59L1.83016 12L0.410156 13.41Z"
+                                                        fill="#3FB02C" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1220_2165">
+                                                        <rect width="24" height="24" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            <span>Ripristina la curvatura cervicale</span></li>
+                                        <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <g clip-path="url(#clip0_1220_2165)">
+                                                    <path
+                                                        d="M18.0002 6.99997L16.5902 5.58997L10.2502 11.93L11.6602 13.34L18.0002 6.99997ZM22.2402 5.58997L11.6602 16.17L7.48016 12L6.07016 13.41L11.6602 19L23.6602 6.99997L22.2402 5.58997ZM0.410156 13.41L6.00016 19L7.41016 17.59L1.83016 12L0.410156 13.41Z"
+                                                        fill="#3FB02C" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1220_2165">
+                                                        <rect width="24" height="24" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            <span>Anallergico, antibatterico e antimuffa</span></li>
+                                    </ul>
+                                    <div class="ratings_wrap">
+                                        <div class="stars">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+                                                viewBox="0 0 20 21" fill="none">
+                                                <g clip-path="url(#clip0_1224_662)">
+                                                    <rect width="20" height="20" transform="translate(0 0.5)"
+                                                        fill="#00B67A" />
+                                                    <path
+                                                        d="M10.0003 14.8916L15.1503 18L13.7837 12.1416L18.3337 8.19996L12.342 7.69163L10.0003 2.16663L7.65866 7.69163L1.66699 8.19996L6.21699 12.1416L4.85033 18L10.0003 14.8916Z"
+                                                        fill="white" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1224_662">
+                                                        <rect width="20" height="20" fill="white"
+                                                            transform="translate(0 0.5)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+                                                viewBox="0 0 20 21" fill="none">
+                                                <g clip-path="url(#clip0_1224_662)">
+                                                    <rect width="20" height="20" transform="translate(0 0.5)"
+                                                        fill="#00B67A" />
+                                                    <path
+                                                        d="M10.0003 14.8916L15.1503 18L13.7837 12.1416L18.3337 8.19996L12.342 7.69163L10.0003 2.16663L7.65866 7.69163L1.66699 8.19996L6.21699 12.1416L4.85033 18L10.0003 14.8916Z"
+                                                        fill="white" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1224_662">
+                                                        <rect width="20" height="20" fill="white"
+                                                            transform="translate(0 0.5)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+                                                viewBox="0 0 20 21" fill="none">
+                                                <g clip-path="url(#clip0_1224_662)">
+                                                    <rect width="20" height="20" transform="translate(0 0.5)"
+                                                        fill="#00B67A" />
+                                                    <path
+                                                        d="M10.0003 14.8916L15.1503 18L13.7837 12.1416L18.3337 8.19996L12.342 7.69163L10.0003 2.16663L7.65866 7.69163L1.66699 8.19996L6.21699 12.1416L4.85033 18L10.0003 14.8916Z"
+                                                        fill="white" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1224_662">
+                                                        <rect width="20" height="20" fill="white"
+                                                            transform="translate(0 0.5)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+                                                viewBox="0 0 20 21" fill="none">
+                                                <g clip-path="url(#clip0_1224_662)">
+                                                    <rect width="20" height="20" transform="translate(0 0.5)"
+                                                        fill="#00B67A" />
+                                                    <path
+                                                        d="M10.0003 14.8916L15.1503 18L13.7837 12.1416L18.3337 8.19996L12.342 7.69163L10.0003 2.16663L7.65866 7.69163L1.66699 8.19996L6.21699 12.1416L4.85033 18L10.0003 14.8916Z"
+                                                        fill="white" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1224_662">
+                                                        <rect width="20" height="20" fill="white"
+                                                            transform="translate(0 0.5)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+                                                viewBox="0 0 20 21" fill="none">
+                                                <g clip-path="url(#clip0_1224_662)">
+                                                    <rect width="20" height="20" transform="translate(0 0.5)"
+                                                        fill="#00B67A" />
+                                                    <path
+                                                        d="M10.0003 14.8916L15.1503 18L13.7837 12.1416L18.3337 8.19996L12.342 7.69163L10.0003 2.16663L7.65866 7.69163L1.66699 8.19996L6.21699 12.1416L4.85033 18L10.0003 14.8916Z"
+                                                        fill="white" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1224_662">
+                                                        <rect width="20" height="20" fill="white"
+                                                            transform="translate(0 0.5)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                        <p>4,8 su Trustpilot</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="quantity_checkboxes mb20">
+                        <input type="radio" name="quantityMemoryBio" id="cmbq_2x" value="109.00" data-discount="65"
+                        data-pillow="Cuscini Memory Bio" data-quantity="2">
+                        <span class="radio-box"></span>
+                        <label for="cmbq_2x">
+                            <div class="boxTopRow"> 
+                                <p class="box_title">2 Cuscini Memory Bio</p>
+                            </div>
+                            <div class="main-wrap">
+                                <div class="main_conta">
+                                    <div class="image_col">
+                                        <img src="./3xBioCusion2.png" alt="Two Pillows" width=""> 
+                                    </div>
+                                    <div class="pricing_details">
+                                        <p class="price_after_discount">38.00€ a cuscino <span
+                                                class="original_price">109
+                                                €</span></p>
+                                        <p class="total_price">Totale: <strong>76.00€</strong>
+                                            <span class="discount_conta">-65%</span></p>
+                                    </div>
+                                </div>
+                                <div class="bottom_wrap">
+                                    <ul>
+                                        <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <g clip-path="url(#clip0_1220_2165)">
+                                                    <path
+                                                        d="M18.0002 6.99997L16.5902 5.58997L10.2502 11.93L11.6602 13.34L18.0002 6.99997ZM22.2402 5.58997L11.6602 16.17L7.48016 12L6.07016 13.41L11.6602 19L23.6602 6.99997L22.2402 5.58997ZM0.410156 13.41L6.00016 19L7.41016 17.59L1.83016 12L0.410156 13.41Z"
+                                                        fill="#3FB02C" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1220_2165">
+                                                        <rect width="24" height="24" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            <span>Dispositivo Medico classe 1 🇮🇹</span></li>
+                                        <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <g clip-path="url(#clip0_1220_2165)">
+                                                    <path
+                                                        d="M18.0002 6.99997L16.5902 5.58997L10.2502 11.93L11.6602 13.34L18.0002 6.99997ZM22.2402 5.58997L11.6602 16.17L7.48016 12L6.07016 13.41L11.6602 19L23.6602 6.99997L22.2402 5.58997ZM0.410156 13.41L6.00016 19L7.41016 17.59L1.83016 12L0.410156 13.41Z"
+                                                        fill="#3FB02C" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1220_2165">
+                                                        <rect width="24" height="24" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            <span>Ripristina la curvatura cervicale</span></li>
+                                        <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <g clip-path="url(#clip0_1220_2165)">
+                                                    <path
+                                                        d="M18.0002 6.99997L16.5902 5.58997L10.2502 11.93L11.6602 13.34L18.0002 6.99997ZM22.2402 5.58997L11.6602 16.17L7.48016 12L6.07016 13.41L11.6602 19L23.6602 6.99997L22.2402 5.58997ZM0.410156 13.41L6.00016 19L7.41016 17.59L1.83016 12L0.410156 13.41Z"
+                                                        fill="#3FB02C" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1220_2165">
+                                                        <rect width="24" height="24" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            <span>Anallergico, antibatterico e antimuffa</span></li>
+                                    </ul>
+                                    <div class="ratings_wrap">
+                                        <div class="stars">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+                                                viewBox="0 0 20 21" fill="none">
+                                                <g clip-path="url(#clip0_1224_662)">
+                                                    <rect width="20" height="20" transform="translate(0 0.5)"
+                                                        fill="#00B67A" />
+                                                    <path
+                                                        d="M10.0003 14.8916L15.1503 18L13.7837 12.1416L18.3337 8.19996L12.342 7.69163L10.0003 2.16663L7.65866 7.69163L1.66699 8.19996L6.21699 12.1416L4.85033 18L10.0003 14.8916Z"
+                                                        fill="white" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1224_662">
+                                                        <rect width="20" height="20" fill="white"
+                                                            transform="translate(0 0.5)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+                                                viewBox="0 0 20 21" fill="none">
+                                                <g clip-path="url(#clip0_1224_662)">
+                                                    <rect width="20" height="20" transform="translate(0 0.5)"
+                                                        fill="#00B67A" />
+                                                    <path
+                                                        d="M10.0003 14.8916L15.1503 18L13.7837 12.1416L18.3337 8.19996L12.342 7.69163L10.0003 2.16663L7.65866 7.69163L1.66699 8.19996L6.21699 12.1416L4.85033 18L10.0003 14.8916Z"
+                                                        fill="white" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1224_662">
+                                                        <rect width="20" height="20" fill="white"
+                                                            transform="translate(0 0.5)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+                                                viewBox="0 0 20 21" fill="none">
+                                                <g clip-path="url(#clip0_1224_662)">
+                                                    <rect width="20" height="20" transform="translate(0 0.5)"
+                                                        fill="#00B67A" />
+                                                    <path
+                                                        d="M10.0003 14.8916L15.1503 18L13.7837 12.1416L18.3337 8.19996L12.342 7.69163L10.0003 2.16663L7.65866 7.69163L1.66699 8.19996L6.21699 12.1416L4.85033 18L10.0003 14.8916Z"
+                                                        fill="white" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1224_662">
+                                                        <rect width="20" height="20" fill="white"
+                                                            transform="translate(0 0.5)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+                                                viewBox="0 0 20 21" fill="none">
+                                                <g clip-path="url(#clip0_1224_662)">
+                                                    <rect width="20" height="20" transform="translate(0 0.5)"
+                                                        fill="#00B67A" />
+                                                    <path
+                                                        d="M10.0003 14.8916L15.1503 18L13.7837 12.1416L18.3337 8.19996L12.342 7.69163L10.0003 2.16663L7.65866 7.69163L1.66699 8.19996L6.21699 12.1416L4.85033 18L10.0003 14.8916Z"
+                                                        fill="white" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1224_662">
+                                                        <rect width="20" height="20" fill="white"
+                                                            transform="translate(0 0.5)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+                                                viewBox="0 0 20 21" fill="none">
+                                                <g clip-path="url(#clip0_1224_662)">
+                                                    <rect width="20" height="20" transform="translate(0 0.5)"
+                                                        fill="#00B67A" />
+                                                    <path
+                                                        d="M10.0003 14.8916L15.1503 18L13.7837 12.1416L18.3337 8.19996L12.342 7.69163L10.0003 2.16663L7.65866 7.69163L1.66699 8.19996L6.21699 12.1416L4.85033 18L10.0003 14.8916Z"
+                                                        fill="white" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1224_662">
+                                                        <rect width="20" height="20" fill="white"
+                                                            transform="translate(0 0.5)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                        <p>4,8 su Trustpilot</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="quantity_checkboxes mb20">
+                        <input type="radio" name="quantityMemoryBio" id="cmbq_1x" value="109.00" data-discount="50"
+                        data-pillow="Cuscini Memory Bio" data-quantity="1">
+                        <span class="radio-box"></span>
+                        <label for="cmbq_1x">
+                            <div class="boxTopRow">
+                                <p class="box_title">1 Cuscini Memory Bio</p>
+                            </div>
+                            <div class="main-wrap">
+                                <div class="main_conta">
+                                    <div class="image_col">
+                                        <img src="./3xBioCusion1.png" alt="One Pillow" width="">
+                                    </div>
+                                    <div class="pricing_details">
+                                        <p class="price_after_discount">54.00€ a cuscino <span
+                                                class="original_price">109
+                                                €</span></p>
+                                        <p class="total_price">Totale: <strong>54.00€</strong>
+                                            <span class="discount_conta">-50%</span></p>
+                                    </div>
+                                </div>
+                                <div class="bottom_wrap">
+                                    <ul>
+                                        <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <g clip-path="url(#clip0_1220_2165)">
+                                                    <path
+                                                        d="M18.0002 6.99997L16.5902 5.58997L10.2502 11.93L11.6602 13.34L18.0002 6.99997ZM22.2402 5.58997L11.6602 16.17L7.48016 12L6.07016 13.41L11.6602 19L23.6602 6.99997L22.2402 5.58997ZM0.410156 13.41L6.00016 19L7.41016 17.59L1.83016 12L0.410156 13.41Z"
+                                                        fill="#3FB02C" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1220_2165">
+                                                        <rect width="24" height="24" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            <span>Dispositivo Medico classe 1 🇮🇹</span></li>
+                                        <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <g clip-path="url(#clip0_1220_2165)">
+                                                    <path
+                                                        d="M18.0002 6.99997L16.5902 5.58997L10.2502 11.93L11.6602 13.34L18.0002 6.99997ZM22.2402 5.58997L11.6602 16.17L7.48016 12L6.07016 13.41L11.6602 19L23.6602 6.99997L22.2402 5.58997ZM0.410156 13.41L6.00016 19L7.41016 17.59L1.83016 12L0.410156 13.41Z"
+                                                        fill="#3FB02C" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1220_2165">
+                                                        <rect width="24" height="24" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            <span>Ripristina la curvatura cervicale</span></li>
+                                        <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <g clip-path="url(#clip0_1220_2165)">
+                                                    <path
+                                                        d="M18.0002 6.99997L16.5902 5.58997L10.2502 11.93L11.6602 13.34L18.0002 6.99997ZM22.2402 5.58997L11.6602 16.17L7.48016 12L6.07016 13.41L11.6602 19L23.6602 6.99997L22.2402 5.58997ZM0.410156 13.41L6.00016 19L7.41016 17.59L1.83016 12L0.410156 13.41Z"
+                                                        fill="#3FB02C" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1220_2165">
+                                                        <rect width="24" height="24" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            <span>Anallergico, antibatterico e antimuffa</span></li>
+                                    </ul>
+                                    <div class="ratings_wrap">
+                                        <div class="stars">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+                                                viewBox="0 0 20 21" fill="none">
+                                                <g clip-path="url(#clip0_1224_662)">
+                                                    <rect width="20" height="20" transform="translate(0 0.5)"
+                                                        fill="#00B67A" />
+                                                    <path
+                                                        d="M10.0003 14.8916L15.1503 18L13.7837 12.1416L18.3337 8.19996L12.342 7.69163L10.0003 2.16663L7.65866 7.69163L1.66699 8.19996L6.21699 12.1416L4.85033 18L10.0003 14.8916Z"
+                                                        fill="white" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1224_662">
+                                                        <rect width="20" height="20" fill="white"
+                                                            transform="translate(0 0.5)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+                                                viewBox="0 0 20 21" fill="none">
+                                                <g clip-path="url(#clip0_1224_662)">
+                                                    <rect width="20" height="20" transform="translate(0 0.5)"
+                                                        fill="#00B67A" />
+                                                    <path
+                                                        d="M10.0003 14.8916L15.1503 18L13.7837 12.1416L18.3337 8.19996L12.342 7.69163L10.0003 2.16663L7.65866 7.69163L1.66699 8.19996L6.21699 12.1416L4.85033 18L10.0003 14.8916Z"
+                                                        fill="white" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1224_662">
+                                                        <rect width="20" height="20" fill="white"
+                                                            transform="translate(0 0.5)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+                                                viewBox="0 0 20 21" fill="none">
+                                                <g clip-path="url(#clip0_1224_662)">
+                                                    <rect width="20" height="20" transform="translate(0 0.5)"
+                                                        fill="#00B67A" />
+                                                    <path
+                                                        d="M10.0003 14.8916L15.1503 18L13.7837 12.1416L18.3337 8.19996L12.342 7.69163L10.0003 2.16663L7.65866 7.69163L1.66699 8.19996L6.21699 12.1416L4.85033 18L10.0003 14.8916Z"
+                                                        fill="white" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1224_662">
+                                                        <rect width="20" height="20" fill="white"
+                                                            transform="translate(0 0.5)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+                                                viewBox="0 0 20 21" fill="none">
+                                                <g clip-path="url(#clip0_1224_662)">
+                                                    <rect width="20" height="20" transform="translate(0 0.5)"
+                                                        fill="#00B67A" />
+                                                    <path
+                                                        d="M10.0003 14.8916L15.1503 18L13.7837 12.1416L18.3337 8.19996L12.342 7.69163L10.0003 2.16663L7.65866 7.69163L1.66699 8.19996L6.21699 12.1416L4.85033 18L10.0003 14.8916Z"
+                                                        fill="white" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1224_662">
+                                                        <rect width="20" height="20" fill="white"
+                                                            transform="translate(0 0.5)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+                                                viewBox="0 0 20 21" fill="none">
+                                                <g clip-path="url(#clip0_1224_662)">
+                                                    <rect width="20" height="20" transform="translate(0 0.5)"
+                                                        fill="#00B67A" />
+                                                    <path
+                                                        d="M10.0003 14.8916L15.1503 18L13.7837 12.1416L18.3337 8.19996L12.342 7.69163L10.0003 2.16663L7.65866 7.69163L1.66699 8.19996L6.21699 12.1416L4.85033 18L10.0003 14.8916Z"
+                                                        fill="white" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1224_662">
+                                                        <rect width="20" height="20" fill="white"
+                                                            transform="translate(0 0.5)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                        <p>4,8 su Trustpilot</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="extra-coupon-conta">
+                    <div class="coupon-conta-wrap">
+                        <div class="title-conta">
+                            <h2>Coupon extra di 10€!</h2>
+                        </div>
+                        <div class="card-body">
+                            <h4>Hai attivato ora un coupon a tempo. Inoltre:</h4>
+                            <ul>
+                                <li><img src="./clock.svg" alt="clock" width="17"><span>Spedizioni in 24/48 ore
+                                        gratis!</span></li>
+                                <li><img src="./cart.svg" width="20px" alt="cart"><span>Paghi il corriere in
+                                        contanti!</span></li>
+                                <li><img src="./verification-badge.svg" width="15" alt="verification-badge"><span>14
+                                        Giorni di Garanzia di Rimborso!</span></li>
+                                <li><img src="./support-icon.svg" width="16" alt="support icon"><span>Supporto
+                                        telefonico o WhatsApp!</span> </li>
+                            </ul>
+                            <div id="timer">
+                                <div class="time-wrap">
+                                <div id="minutes">00</div>
+                            </div>
+                                <div class="colon">:</div>
+                                <div class="time-wrap">
+                                <div id="seconds">00</div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="card-foot">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25"
+                                fill="none">
+                                <path
+                                    d="M12 19.5001L6 13.5001L7.4 12.1001L12 16.6751L16.6 12.1001L18 13.5001L12 19.5001ZM12 13.5001L6 7.5001L7.4 6.1001L12 10.6751L16.6 6.1001L18 7.5001L12 13.5001Z"
+                                    fill="#2F382F" />
+                            </svg>
+                            <p>Non perdere lo sconto a scadenza!
+                                Compila ora il form qui sotto.</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25"
+                                fill="none">
+                                <path
+                                    d="M12 19.5001L6 13.5001L7.4 12.1001L12 16.6751L16.6 12.1001L18 13.5001L12 19.5001ZM12 13.5001L6 7.5001L7.4 6.1001L12 10.6751L16.6 6.1001L18 7.5001L12 13.5001Z"
+                                    fill="#2F382F" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="personalAndDeliveryDetails">
+                <div class="personal-info form-info">
+                    <h2>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M12 12C15.315 12 18 9.315 18 6C18 2.685 15.315 0 12 0C8.685 0 6 2.685 6 6C6 9.315 8.685 12 12 12ZM12 15C7.995 15 0 17.01 0 21V24H24V21C24 17.01 16.005 15 12 15Z"
+                                fill="black" />
+                        </svg>
+                        <span class="title">INFORMAZIONI PERSONALI</span>
+                    </h2>
+                </div>
+                <div class="half_width_conta">
+                    <div class="inputContainer">
+                        <input type="text" class="text-input" id="fName" placeholder="" required>
+                        <label for="fName"> Nome</label>
+                    </div>
+                    <div class="inputContainer">
+                        <input type="text" class="text-input" id="lName" placeholder="" required>
+                        <label for="lName"> Cognome</label>
+                    </div>
+                </div>
+                <input type="tel" name="" id="telephone" placeholder="123 4567 8901" required>
+                <div class="input-box">
+                    <div class="inputContainer">
+                        <input type="text" class="text-input" name="" id="email" placeholder="" onkeydown="validation()"
+                            required>
+                        <label for="email"> Indirizzo email</label>
+                    </div>
+                    <span id="emailValidationText"></span>
+                </div>
+                <div class="checkbox_conta">
+                    <input type="checkbox" name="privacy_policy" id="privacy_policy" required>
+                    <label for="privacy_policy">Inviami informazioni e offerte (<a href="#privacy-policy-content"
+                            class="open-privacy-policy privacy-link">Privacy Policy</a>)</label>
+                </div>
+                <div class="inputContainer">
+                    <input type="text" class="text-input" name="" id="taxCode" placeholder="" required>
+                    <label for="taxCode">Codice fiscale per detrazioni (opzionale)</label>
+                </div>
+                <div class="form-info">
+                    <h2>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <g clip-path="url(#clip0_286_3529)">
+                                <path
+                                    d="M20 8H17V4H3C1.9 4 1 4.9 1 6V17H3C3 18.66 4.34 20 6 20C7.66 20 9 18.66 9 17H15C15 18.66 16.34 20 18 20C19.66 20 21 18.66 21 17H23V12L20 8ZM6 18.5C5.17 18.5 4.5 17.83 4.5 17C4.5 16.17 5.17 15.5 6 15.5C6.83 15.5 7.5 16.17 7.5 17C7.5 17.83 6.83 18.5 6 18.5ZM19.5 9.5L21.46 12H17V9.5H19.5ZM18 18.5C17.17 18.5 16.5 17.83 16.5 17C16.5 16.17 17.17 15.5 18 15.5C18.83 15.5 19.5 16.17 19.5 17C19.5 17.83 18.83 18.5 18 18.5Z"
+                                    fill="#323232" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_286_3529">
+                                    <rect width="24" height="24" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <span class="title">INDIRIZZO DI SPEDIZIONE</span>
+                    </h2>
+                </div>
+                <div class="inputContainer">
+                    <input type="text" class="text-input" name="" id="address" placeholder="" required>
+                    <label for="address">Indirizzo (via e civico)</label>
+                </div>
+                <div class="inputContainer">
+                    <input type="text" class="text-input" name="" id="city" placeholder="" required>
+                    <label for="city">Città</label>
+                </div>
+                <div class="half_width_conta">
+                    <select name="Provincia" id="provincia" required>
+                        <option>Provincia</option>
+                        <option value="AG">Agrigento (AG)</option>
+                        <option value="AL">Alessandria (AL)</option>
+                        <option value="AN">Ancona (AN)</option>
+                        <option value="AO">Aosta (AO)</option>
+                        <option value="AR">Arezzo (AR)</option>
+                        <option value="AP">Ascoli Piceno (AP)</option>
+                        <option value="AT">Asti (AT)</option>
+                        <option value="AV">Avellino (AV)</option>
+                        <option value="BA">Bari (BA)</option>
+                        <option value="BT">Barletta-Andria-Trani (BT)</option>
+                        <option value="BL">Belluno (BL)</option>
+                        <option value="BN">Benevento (BN)</option>
+                        <option value="BG">Bergamo (BG)</option>
+                        <option value="BI">Biella (BI)</option>
+                        <option value="BO">Bologna (BO)</option>
+                        <option value="BS">Brescia (BS)</option>
+                        <option value="BR">Brindisi (BR)</option>
+                        <option value="CA">Cagliari (CA)</option>
+                        <option value="CL">Caltanissetta (CL)</option>
+                        <option value="CB">Campobasso (CB)</option>
+                        <option value="CE">Caserta (CE)</option>
+                        <option value="CT">Catania (CT)</option>
+                        <option value="CZ">Catanzaro (CZ)</option>
+                        <option value="CH">Chieti (CH)</option>
+                        <option value="CO">Como (CO)</option>
+                        <option value="CS">Cosenza (CS)</option>
+                        <option value="CR">Cremona (CR)</option>
+                        <option value="KR">Crotone (KR)</option>
+                        <option value="CN">Cuneo (CN)</option>
+                        <option value="EN">Enna (EN)</option>
+                        <option value="FM">Fermo (FM)</option>
+                        <option value="FE">Ferrara (FE)</option>
+                        <option value="FI">Florence (FI)</option>
+                        <option value="FG">Foggia (FG)</option>
+                        <option value="FC">Forlì-Cesena (FC)</option>
+                        <option value="FR">Frosinone (FR)</option>
+                        <option value="GE">Genoa (GE)</option>
+                        <option value="GO">Gorizia (GO)</option>
+                        <option value="GR">Grosseto (GR)</option>
+                        <option value="IM">Imperia (IM)</option>
+                        <option value="IS">Isernia (IS)</option>
+                        <option value="SP">La Spezia (SP)</option>
+                        <option value="AQ">L'Aquila (AQ)</option>
+                        <option value="LT">Latina (LT)</option>
+                        <option value="LE">Lecce (LE)</option>
+                        <option value="LC">Lecco (LC)</option>
+                        <option value="LI">Livorno (LI)</option>
+                        <option value="LO">Lodi (LO)</option>
+                        <option value="LU">Lucca (LU)</option>
+                        <option value="MC">Macerata (MC)</option>
+                        <option value="MN">Mantua (MN)</option>
+                        <option value="MS">Massa and Carrara (MS)</option>
+                        <option value="MT">Matera (MT)</option>
+                        <option value="ME">Messina (ME)</option>
+                        <option value="MI">Milan (MI)</option>
+                        <option value="MO">Modena (MO)</option>
+                        <option value="MB">Monza and Brianza (MB)</option>
+                        <option value="NA">Naples (NA)</option>
+                        <option value="NO">Novara (NO)</option>
+                        <option value="NU">Nuoro (NU)</option>
+                        <option value="OR">Oristano (OR)</option>
+                        <option value="PD">Padua (PD)</option>
+                        <option value="PA">Palermo (PA)</option>
+                        <option value="PR">Parma (PR)</option>
+                        <option value="PV">Pavia (PV)</option>
+                        <option value="PG">Perugia (PG)</option>
+                        <option value="PU">Pesaro and Urbino (PU)</option>
+                        <option value="PE">Pescara (PE)</option>
+                        <option value="PC">Piacenza (PC)</option>
+                        <option value="PI">Pisa (PI)</option>
+                        <option value="PT">Pistoia (PT)</option>
+                        <option value="PN">Pordenone (PN)</option>
+                        <option value="PZ">Potenza (PZ)</option>
+                        <option value="PO">Prato (PO)</option>
+                        <option value="RG">Ragusa (RG)</option>
+                        <option value="RA">Ravenna (RA)</option>
+                        <option value="RC">Reggio Calabria (RC)</option>
+                        <option value="RE">Reggio Emilia (RE)</option>
+                        <option value="RI">Rieti (RI)</option>
+                        <option value="RN">Rimini (RN)</option>
+                        <option value="RM">Rome (RM)</option>
+                        <option value="RO">Rovigo (RO)</option>
+                        <option value="SA">Salerno (SA)</option>
+                        <option value="SS">Sassari (SS)</option>
+                        <option value="SV">Savona (SV)</option>
+                        <option value="SI">Siena (SI)</option>
+                        <option value="SO">Sondrio (SO)</option>
+                        <option value="SU">South Sardinia (SU)</option>
+                        <option value="BZ">South Tyrol (BZ)</option>
+                        <option value="SR">Syracuse (SR)</option>
+                        <option value="TA">Taranto (TA)</option>
+                        <option value="TE">Teramo (TE)</option>
+                        <option value="TR">Terni (TR)</option>
+                        <option value="TP">Trapani (TP)</option>
+                        <option value="TN">Trento (TN)</option>
+                        <option value="TV">Treviso (TV)</option>
+                        <option value="TS">Trieste (TS)</option>
+                        <option value="TO">Turin (TO)</option>
+                        <option value="UD">Udine (UD)</option>
+                        <option value="VA">Varese (VA)</option>
+                        <option value="VE">Venice (VE)</option>
+                        <option value="VB">Verbano-Cusio-Ossola (VB)</option>
+                        <option value="VC">Vercelli (VC)</option>
+                        <option value="VR">Verona (VR)</option>
+                        <option value="VV">Vibo Valentia (VV)</option>
+                        <option value="VI">Vicenza (VI)</option>
+                        <option value="VT">Viterbo (VT)</option>
+                    </select>
+                    <div class="inputContainer">
+                        <input type="number" class="text-input" name="" id="postalCode" placeholder="" required>
+                        <label for="postalCode">Codice Postale</label>
+                    </div>
+                </div>
+                <h5 class="radio_title">MODALITA DI SPEDIZIONE</h5>
+                <label class="radio-conta orange_theme" for="CUSCINO MEMORY">
+                    <input type="radio" name="shippingMethod" id="memory_pillow" value="1_2_days" checked>
+                    <span class="radio-box"></span>
+                    <span class="text-wrap">
+                        <span class="radio-lable">Spedizione 1-2 giorni lavorativi</span>
+                        <span class="offerForFree">Gratis</span>
+                    </span>
+                </label>
+                <h5 class="radio_title">MODALITA DI PAGAMENTO</h5>
+                <label class="radio-conta orange_theme" for="CUSCINO MEMORY">
+                    <input type="radio" name="paymentMethod" id="memory_pillow" value="cash_on_delivery" checked>
+                    <span class="radio-box"></span>
+                    <span class="text-wrap">
+                        <span class="radio-lable">Pagamento in contanti alla consegna</span>
+                        <span class="offerForFree">Gratis</span>
+                    </span>
+                </label>
+
+                <div class="order_details_conta hide">
+                    <div class="total_value_conta">
+                        <div class="selected_pillow_img">
+                            
+                        </div>
+                        <h5 class="total_order_value">
+                            Sommario dell’ordine
+                        </h5>
+                    </div> 
+                    <div class="total_breakdown ">
+
+                    </div> 
+                </div>
+
+                <p class="consent-text">
+                    Completando l’ordine dichiaro di accettare i <br> <a href="#terms-and-condition-content"
+                        class="open-terms-and-conditions terms-link">Termini e le Condizioni</a> di vendita
+                </p>
+                <button type="submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                        <g clip-path="url(#clip0_290_3649)">
+                            <path
+                                d="M17.71 9L13.33 2.44C13.14 2.16 12.82 2.02 12.5 2.02C12.18 2.02 11.86 2.16 11.67 2.45L7.29 9H2.5C1.95 9 1.5 9.45 1.5 10C1.5 10.09 1.51 10.18 1.54 10.27L4.08 19.54C4.31 20.38 5.08 21 6 21H19C19.92 21 20.69 20.38 20.93 19.54L23.47 10.27L23.5 10C23.5 9.45 23.05 9 22.5 9H17.71ZM9.5 9L12.5 4.6L15.5 9H9.5ZM12.5 17C11.4 17 10.5 16.1 10.5 15C10.5 13.9 11.4 13 12.5 13C13.6 13 14.5 13.9 14.5 15C14.5 16.1 13.6 17 12.5 17Z"
+                                fill="#201E1E" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_290_3649">
+                                <rect width="24" height="24" fill="white" transform="translate(0.5)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <span>Completa acquisto</span>
+                </button>
+            </div>
+                <h4 class="certificate_title">
+                    <svg style="margin-right: 10px;" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M9.79997 13.4884L10.6269 10.7731L8.45193 9.09613H11.1577L12 6.3923L12.8423 9.09613H15.548L13.3576 10.7731L14.1846 13.4884L12 11.8L9.79997 13.4884ZM6.5 22.2307V15.073C5.86667 14.4115 5.375 13.6468 5.025 12.7788C4.675 11.9109 4.5 10.9846 4.5 9.99998C4.5 7.90768 5.22692 6.13461 6.68077 4.68078C8.13461 3.22693 9.90767 2.5 12 2.5C14.0923 2.5 15.8653 3.22693 17.3192 4.68078C18.773 6.13461 19.5 7.90768 19.5 9.99998C19.5 10.9846 19.325 11.9109 18.975 12.7788C18.625 13.6468 18.1333 14.4115 17.5 15.073V22.2307L12 20.4807L6.5 22.2307V22.2307ZM12 16C13.6666 16 15.0833 15.4166 16.25 14.25C17.4166 13.0833 18 11.6666 18 9.99998C18 8.33331 17.4166 6.91664 16.25 5.74998C15.0833 4.58331 13.6666 3.99998 12 3.99998C10.3333 3.99998 8.91664 4.58331 7.74997 5.74998C6.58331 6.91664 5.99997 8.33331 5.99997 9.99998C5.99997 11.6666 6.58331 13.0833 7.74997 14.25C8.91664 15.4166 10.3333 16 12 16ZM7.99997 20.0346L12 18.9615L16 20.0346V16.3192C15.4295 16.691 14.8051 16.9807 14.1269 17.1884C13.4487 17.3961 12.7397 17.5 12 17.5C11.2602 17.5 10.5512 17.3961 9.87305 17.1884C9.19485 16.9807 8.57049 16.691 7.99997 16.3192V20.0346Z"
+                            fill="#019444" />
+                    </svg>
+                    <span>14 Giorni di Garanzia di Rimborso!</span>
+                </h4>
+            </form>
+        </div>
+    </section>
+
+    <section class="simple-image-text">
+        <div class="content-wrapper">
+            <div class="image-text_conta align-center mb20">
+                <div class="image-conta">
+                    <img src="./Red_logo.svg" alt="">
+                </div>
+                <div class="text-conta">
+                    <h2>Dispositivo Medico </h2>
+                    <p>I prodotti BMM Accessori, realizzati interamente in Italia, sono classificati come dispositivi
+                        medici di classe I e registrati presso il Ministero della Salute, conformi alla direttiva CEE
+                        93/42.</p>
+                </div>
+            </div>
+            <div class="image-text_conta align-center mb20">
+                <div class="image-conta">
+                    <img src="./Rimborso.svg" alt="">
+                </div>
+                <div class="text-conta">
+                    <h2>14 Giorni Di Garanzia di Rimborso</h2>
+                    <p>Se non sei completamente soddisfatto del tuo acquisto per qualsiasi motivo, hai 14 giorni per
+                        restituire il prodotto e ricevere il rimborso completo del prezzo pagato.</p>
+                </div>
+            </div>
+            <div class="image-text_conta align-center mb20">
+                <div class="image-conta">
+                    <img src="./Made_in_italy.svg" alt="">
+                </div>
+                <div class="text-conta">
+                    <h2>Azienda Italiana</h2>
+                    <p>La nostra azienda è toscana e siamo orgogliosi di affermare che tutti i nostri prodotti sono
+                        interamente realizzati in Italia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="rating-reviews">
+        <div class="content-wrapper">
+            <div class="feedback-container conta-1">
+                <h4>SITO ECCEZIONALE PER ACQUISTI ON LINE</h4>
+                <p>Sito eccezionale per acquisti on line, precisi e puntuali nelle consegne è facile da utilizzare</p>
+                <div class="ratings">
+                    <div class="stars-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                            <g clip-path="url(#clip0_208_679)">
+                                <rect width="24" height="24" transform="translate(0.5)" fill="#00B67A" />
+                                <path
+                                    d="M12.5 17.27L18.68 21L17.04 13.97L22.5 9.24L15.31 8.63L12.5 2L9.69 8.63L2.5 9.24L7.96 13.97L6.32 21L12.5 17.27Z"
+                                    fill="white" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_208_679">
+                                    <rect width="24" height="24" fill="white" transform="translate(0.5)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                            <g clip-path="url(#clip0_208_679)">
+                                <rect width="24" height="24" transform="translate(0.5)" fill="#00B67A" />
+                                <path
+                                    d="M12.5 17.27L18.68 21L17.04 13.97L22.5 9.24L15.31 8.63L12.5 2L9.69 8.63L2.5 9.24L7.96 13.97L6.32 21L12.5 17.27Z"
+                                    fill="white" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_208_679">
+                                    <rect width="24" height="24" fill="white" transform="translate(0.5)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                            <g clip-path="url(#clip0_208_679)">
+                                <rect width="24" height="24" transform="translate(0.5)" fill="#00B67A" />
+                                <path
+                                    d="M12.5 17.27L18.68 21L17.04 13.97L22.5 9.24L15.31 8.63L12.5 2L9.69 8.63L2.5 9.24L7.96 13.97L6.32 21L12.5 17.27Z"
+                                    fill="white" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_208_679">
+                                    <rect width="24" height="24" fill="white" transform="translate(0.5)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                            <g clip-path="url(#clip0_208_679)">
+                                <rect width="24" height="24" transform="translate(0.5)" fill="#00B67A" />
+                                <path
+                                    d="M12.5 17.27L18.68 21L17.04 13.97L22.5 9.24L15.31 8.63L12.5 2L9.69 8.63L2.5 9.24L7.96 13.97L6.32 21L12.5 17.27Z"
+                                    fill="white" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_208_679">
+                                    <rect width="24" height="24" fill="white" transform="translate(0.5)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                            <g clip-path="url(#clip0_208_679)">
+                                <rect width="24" height="24" transform="translate(0.5)" fill="#00B67A" />
+                                <path
+                                    d="M12.5 17.27L18.68 21L17.04 13.97L22.5 9.24L15.31 8.63L12.5 2L9.69 8.63L2.5 9.24L7.96 13.97L6.32 21L12.5 17.27Z"
+                                    fill="white" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_208_679">
+                                    <rect width="24" height="24" fill="white" transform="translate(0.5)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+                <div class="name-date">
+                    <p><strong>Valeriano - </strong>16 ott 2023</p>
+                    <img src="./verified.svg" alt="" sizes="" srcset="">
+                </div>
+            </div>
+
+            <div class="feedback-container conta-2">
+                <h4>CONSIGLIO ASSOLUTAMENTE</h4>
+                <p>Da consigliare assolutamente! La mia esperienza di acquisto è stata decisamente positiva. Sono stati
+                    molto professionali, cordiali, e disponibili a fornirmi tutte le informazioni richieste. La
+                    spedizione è stata super veloce. Gli articoli acquistati sono di ottima qualità e totalmente
+                    corrispondenti alle caratteristiche descritte. Farò sicuramente altri acquisti. Top!!!!</p>
+                <div class="ratings">
+                    <div class="stars-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                            <g clip-path="url(#clip0_208_679)">
+                                <rect width="24" height="24" transform="translate(0.5)" fill="#00B67A" />
+                                <path
+                                    d="M12.5 17.27L18.68 21L17.04 13.97L22.5 9.24L15.31 8.63L12.5 2L9.69 8.63L2.5 9.24L7.96 13.97L6.32 21L12.5 17.27Z"
+                                    fill="white" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_208_679">
+                                    <rect width="24" height="24" fill="white" transform="translate(0.5)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                            <g clip-path="url(#clip0_208_679)">
+                                <rect width="24" height="24" transform="translate(0.5)" fill="#00B67A" />
+                                <path
+                                    d="M12.5 17.27L18.68 21L17.04 13.97L22.5 9.24L15.31 8.63L12.5 2L9.69 8.63L2.5 9.24L7.96 13.97L6.32 21L12.5 17.27Z"
+                                    fill="white" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_208_679">
+                                    <rect width="24" height="24" fill="white" transform="translate(0.5)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                            <g clip-path="url(#clip0_208_679)">
+                                <rect width="24" height="24" transform="translate(0.5)" fill="#00B67A" />
+                                <path
+                                    d="M12.5 17.27L18.68 21L17.04 13.97L22.5 9.24L15.31 8.63L12.5 2L9.69 8.63L2.5 9.24L7.96 13.97L6.32 21L12.5 17.27Z"
+                                    fill="white" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_208_679">
+                                    <rect width="24" height="24" fill="white" transform="translate(0.5)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                            <g clip-path="url(#clip0_208_679)">
+                                <rect width="24" height="24" transform="translate(0.5)" fill="#00B67A" />
+                                <path
+                                    d="M12.5 17.27L18.68 21L17.04 13.97L22.5 9.24L15.31 8.63L12.5 2L9.69 8.63L2.5 9.24L7.96 13.97L6.32 21L12.5 17.27Z"
+                                    fill="white" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_208_679">
+                                    <rect width="24" height="24" fill="white" transform="translate(0.5)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                            <g clip-path="url(#clip0_208_679)">
+                                <rect width="24" height="24" transform="translate(0.5)" fill="#00B67A" />
+                                <path
+                                    d="M12.5 17.27L18.68 21L17.04 13.97L22.5 9.24L15.31 8.63L12.5 2L9.69 8.63L2.5 9.24L7.96 13.97L6.32 21L12.5 17.27Z"
+                                    fill="white" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_208_679">
+                                    <rect width="24" height="24" fill="white" transform="translate(0.5)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+                <div class="name-date">
+                    <p><strong>Barbara Baccini - </strong>25 ott 2023</p>
+                    <img src="./verified.svg" alt="" sizes="" srcset="">
+                </div>
+            </div>
+
+            <div class="feedback-container conta-3">
+                <h4>OTTIMO SITO</h4>
+                <p>Ottimo sito.Faró sicuramente altri acquisti, lo consiglio vivamente.</p>
+                <div class="ratings">
+                    <div class="stars-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                            <g clip-path="url(#clip0_208_679)">
+                                <rect width="24" height="24" transform="translate(0.5)" fill="#00B67A" />
+                                <path
+                                    d="M12.5 17.27L18.68 21L17.04 13.97L22.5 9.24L15.31 8.63L12.5 2L9.69 8.63L2.5 9.24L7.96 13.97L6.32 21L12.5 17.27Z"
+                                    fill="white" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_208_679">
+                                    <rect width="24" height="24" fill="white" transform="translate(0.5)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                            <g clip-path="url(#clip0_208_679)">
+                                <rect width="24" height="24" transform="translate(0.5)" fill="#00B67A" />
+                                <path
+                                    d="M12.5 17.27L18.68 21L17.04 13.97L22.5 9.24L15.31 8.63L12.5 2L9.69 8.63L2.5 9.24L7.96 13.97L6.32 21L12.5 17.27Z"
+                                    fill="white" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_208_679">
+                                    <rect width="24" height="24" fill="white" transform="translate(0.5)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                            <g clip-path="url(#clip0_208_679)">
+                                <rect width="24" height="24" transform="translate(0.5)" fill="#00B67A" />
+                                <path
+                                    d="M12.5 17.27L18.68 21L17.04 13.97L22.5 9.24L15.31 8.63L12.5 2L9.69 8.63L2.5 9.24L7.96 13.97L6.32 21L12.5 17.27Z"
+                                    fill="white" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_208_679">
+                                    <rect width="24" height="24" fill="white" transform="translate(0.5)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                            <g clip-path="url(#clip0_208_679)">
+                                <rect width="24" height="24" transform="translate(0.5)" fill="#00B67A" />
+                                <path
+                                    d="M12.5 17.27L18.68 21L17.04 13.97L22.5 9.24L15.31 8.63L12.5 2L9.69 8.63L2.5 9.24L7.96 13.97L6.32 21L12.5 17.27Z"
+                                    fill="white" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_208_679">
+                                    <rect width="24" height="24" fill="white" transform="translate(0.5)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                            <g clip-path="url(#clip0_208_679)">
+                                <rect width="24" height="24" transform="translate(0.5)" fill="#00B67A" />
+                                <path
+                                    d="M12.5 17.27L18.68 21L17.04 13.97L22.5 9.24L15.31 8.63L12.5 2L9.69 8.63L2.5 9.24L7.96 13.97L6.32 21L12.5 17.27Z"
+                                    fill="white" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_208_679">
+                                    <rect width="24" height="24" fill="white" transform="translate(0.5)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+                <div class="name-date">
+                    <p><strong>Elena Pacini - </strong>31 ott 2023</p>
+                    <img src="./verified.svg" alt="" sizes="" srcset="">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Privacy policy content -->
+    <section id="privacy-policy-content" class="mfp-hide popup-section">
+        <div class="content-wrapper">
+            <div class="popup-content-wrap">
+                <h2>What are our privacy policies? </h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Terms and conditions content -->
+    <section id="terms-and-condition-content" class="mfp-hide popup-section">
+        <div class="content-wrapper">
+            <div class="popup-content-wrap">
+                <h2>What are our Terms and Conditions? </h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cookie Policy content -->
+    <section id="cookie-policy-content" class="mfp-hide popup-section">
+        <div class="content-wrapper">
+            <div class="popup-content-wrap">
+                <h2>What is Cookie Policy? </h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="content-wrapper">
+            <div class="two-col">
+                <div class="left-col">
+                    <ul>
+                        <li>
+                            <a href="#privacy-policy-content" class="open-privacy-policy">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="#terms-and-condition-content" class="open-terms-and-conditions">Termini e
+                                condizioni</a>
+                        </li>
+                        <li>
+                            <a href="#cookie-policy-content" class="open-cookie-policies">Cookie Policy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right-col">
+                    <p>
+                        PN 6742 Net di Francesco Bertini
+                        Via fucini 10, Montale (PT) Italia
+                        P.IVA IT01951450475
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/8.4.7/js/intlTelInput.js">
+
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"
+        integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+    <script defer>
+        // Telephone Number 
+        var input = document.querySelector("#telephone");
+        let minutes=0, seconds=0;
+
+        $(input).intlTelInput({
+            // utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/8.4.6/js/utils.js",
+            autoInsertDialCode: true,
+            separateDialCode: true,
+            initialCountry: "it"
+        });
+
+        // Email Validation
+        function validation() {
+            let form = document.getElementById('pillowCheckoutForm')
+            let email = document.getElementById('email').value
+            let text = document.getElementById('emailValidationText')
+            let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/
+
+            if (email.match(pattern)) {
+                form.classList.add('valid')
+                form.classList.remove('invalid')
+                text.innerHTML = "Your Email Address in valid"
+                text.classList.add('show_text')
+                text.style.color = '#03c305'
+            } else {
+                form.classList.remove('valid')
+                form.classList.add('invalid')
+                text.innerHTML = "Please Enter Valid Email Address"
+                text.classList.add('show_text')
+                text.style.color = '#ff0000'
+            }
+
+            if (email == '') {
+                form.classList.remove('valid')
+                form.classList.remove('invalid')
+                text.innerHTML = ""
+                text.style.color = '#03c305'
+            }
+        }
+
+        // Magnific popup 
+        $('.open-privacy-policy, .open-terms-and-conditions, .open-cookie-policies').magnificPopup({
+            type: 'inline',
+            closeBtnInside: true, // Custom settings, never mind
+            midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+        });
+
+
+        // Show Pillow Type and quantities
+        $(document).ready(function () {
+
+            let quantity, totalAmount, discountPercent, mrpPerPillow;
+            let pillowType = "Cuscino_Memory"
+
+            // Show/hide based on the default selected pillowType
+            updateRadioVisibility();
+
+            // Handle pillowType change
+            $('input[name="pillowType"]').change(function () {
+                updateRadioVisibility();
+            });
+
+            // Handle quantityMemory change
+            $('input[name="quantityMemory"]').change(function () {
+                mrpPerPillow = $(this).val();
+                let featuredImg = this.parentElement.querySelector('.image_col');
+                let imageSrc;
+                    // Check if imageCol exists
+                if (featuredImg) {
+                    // Access the image element within .image_col and get its src attribute
+                     imageSrc = featuredImg.querySelector('img').src;
+                } else {
+                    console.log("image not found.");
+                }
+                quantity = $(this).data('quantity'); 
+                pillowType = $(this).data('pillow'); 
+                discountPercent = $(this).data('discount')
+                orderDetails(mrpPerPillow, pillowType, quantity, discountPercent, imageSrc);
+            });
+
+            // Handle quantityMemoryBio change
+            $('input[name="quantityMemoryBio"]').change(function () {
+                mrpPerPillow = $(this).val();
+                let featuredImg = this.parentElement.querySelector('.image_col');
+                let imageSrc;
+                    // Check if imageCol exists
+                if (featuredImg) {
+                    // Access the image element within .image_col and get its src attribute
+                     imageSrc = featuredImg.querySelector('img').src;
+                } else {
+                    console.log("image not found.");
+                }
+                quantity = $(this).data('quantity'); 
+                pillowType = $(this).data('pillow'); 
+                discountPercent = $(this).data('discount')
+                orderDetails(mrpPerPillow, pillowType, quantity, discountPercent, imageSrc);
+            }); 
+
+            // Function to update radio visibility based on the selected pillowType
+            function updateRadioVisibility() {
+                var selectedPillowType = $('input[name="pillowType"]:checked').val();
+                $('.cuscinoMemory_quantity, .cuscinoMemoryBio_quantity').hide();
+
+                if (selectedPillowType === 'Cuscino_Memory') {
+                    $('.cuscinoMemory_quantity').show();
+                } else if (selectedPillowType === 'Cuscino_Memory_Bio') {
+                    $('.cuscinoMemoryBio_quantity').show();
+                }
+
+                // Trigger change event for the selected quantity
+                $('input[name="' + (selectedPillowType === 'Cuscino_Memory' ? 'quantityMemory' :
+                    'quantityMemoryBio') + '"]:checked').change();
+            }
+
+            // Function to update total amount based on the selected quantity
+            function orderDetails( mrpPerPillow, pillowType, quantity, discountPercent, imageSrc) {
+                let discount = Math.round((mrpPerPillow * quantity * discountPercent)/100); 
+                let priceAfterDiscount = (mrpPerPillow * quantity)- discount;
+                let coupon; 
+                // console.log(imageSrc)
+                $(".selected_pillow_img").html(`<img src="${imageSrc}" alt="Pillow" width="80">`);
+                if (minutes !== 0 && seconds !== 0) { 
+                    coupon = 10.00
+                } else {
+                    coupon = 0; 
+                }
+                // console.log(typeof(quantity))  
+                $('.total_breakdown ').html(
+                    `<div class="generated-details">
+                        <div class="pricing_breakdown">                        
+                            <div class="left-col"> <span class="articleName">${quantity} ${pillowType}</span> da ${mrpPerPillow}€</div> <div class="right-col fw700">  ${mrpPerPillow * quantity } €</div>  
+                        </div>
+                        <div class="pricing_breakdown">
+                            <div class="left-col">Sconto Meta -${discountPercent}% </div> <div class="right-col fw700"> - ${discount} €</div> 
+                        </div>
+                        <div class="pricing_breakdown">
+                            <div class="left-col">Spedizione e contrassegno </div>  <div class="right-col fw700"> 0,00 €</div>
+                        </div>
+                        <div class="pricing_breakdown">
+                            <div class="left-col">Coupon (scade in ${minutes}min ${seconds}sec) </div> <div class="right-col fw700">-${coupon} €</div> 
+                            </div>
+                        <div class="pricing_breakdown totalAmt">
+                            <div class="left-col "> Totale: </div> <div class="right-col "> ${priceAfterDiscount - coupon} €</div>
+                        </div>
+                        </div>`
+
+                            
+                );
+            }
+           
+
+            // Trigger change event for the selected quantity on page load
+            var defaultQuantityRadio = $('input[name="pillowType"]:checked').val() === 'Cuscino_Memory' ?
+                'quantityMemory' : 'quantityMemoryBio';
+            $('input[name="' + defaultQuantityRadio + '"]:checked').change();
+        });
+
+        $(document).ready(function () {
+            $('.text-input').on('input focus', function (e) {
+                var value = e.target.value;
+                var label = $(e.target).siblings('label');
+                if (value || value.trim() !== '') {
+                    label.addClass('filled');
+                } else {
+                    label.removeClass('filled');
+                }
+            });
+
+            $(".cuscinoMemory_quantity .quantity_checkboxes").each(function() {
+                var $clickedCheckbox = $(this);
+                $clickedCheckbox.click(function() {
+                    $(".order_details_conta").show();  
+                    $(".cuscinoMemory_quantity .quantity_checkboxes").not($clickedCheckbox).hide();
+                    $(".show-more-button").show() 
+                });
+            });
+
+            $(".cuscinoMemoryBio_quantity .quantity_checkboxes").each(function() {
+                var $clickedCheckbox = $(this);
+                $clickedCheckbox.click(function() {
+                    $(".order_details_conta").show();  
+                    $(".cuscinoMemoryBio_quantity .quantity_checkboxes").not($clickedCheckbox).hide();
+                    $(".show-more-button").show() 
+                });
+            }); 
+
+            $(".show-more-button").click(function(e){
+                e.preventDefault();
+                $(".quantity_checkboxes").show();
+                $(this).hide(); 
+            })
+
+        });
+
+        // Function to start or resume the timer
+        function startOrResumeTimer(duration, display, startTime) {
+        var timer = duration;
+        var intervalId = setInterval(function () {
+            var now = Date.now();
+            var elapsedTime = Math.floor((now - startTime) / 1000);
+            timer = duration - elapsedTime;
+
+            if (timer <= 0) {
+            clearInterval(intervalId); // Clear interval when timer reaches 0
+            display.textContent = "00:00";
+            localStorage.removeItem("startTime");
+            localStorage.removeItem("userIP");
+            return;
+            }
+
+             minutes = Math.floor(timer / 60); 
+             seconds = timer % 60;
+
+            var minutesStr = minutes < 10 ? "0" + minutes : minutes;
+            var secondsStr = seconds < 10 ? "0" + seconds : seconds;
+
+            // display.textContent = minutesStr + ":" + secondsStr;
+            let minutesConta = document.getElementById("minutes");
+            let secondsConta = document.getElementById("seconds");
+
+            minutesConta.textContent = minutesStr ;
+            secondsConta.textContent = secondsStr; 
+        }, 1000);
+
+        return intervalId; // Return interval ID
+        }
+
+        // Function to check if timer has already started for this user
+        function hasTimerStarted() {
+        var userIP = localStorage.getItem("userIP");
+        return userIP !== null;
+        }
+
+        // Function to set the user IP and start time in localStorage
+        function setUserIPAndStartTime() {
+        var userIP = localStorage.setItem("userIP", "timerStarted");
+        var startTime = Date.now();
+        localStorage.setItem("startTime", startTime);
+        }
+
+        // Add event listener to radio buttons
+        var radioButtons = document.querySelectorAll('.quantity_checkboxes');
+        var currentIntervalId; // Variable to hold the current interval ID
+        radioButtons.forEach(function(radioButton) {
+        radioButton.addEventListener('click', function() {
+            if (!hasTimerStarted()) {
+            setUserIPAndStartTime();
+            var minutes = 15 * 60; // 15 minutes
+            var display = document.querySelector('#timer');
+            if (currentIntervalId) {
+                clearInterval(currentIntervalId); // Clear previous interval if exists
+            }
+            currentIntervalId = startOrResumeTimer(minutes, display, Date.now()); // Start new timer and store interval ID
+            } else {
+            if (localStorage.getItem("startTime") !== null) {
+                var storedStartTime = parseInt(localStorage.getItem("startTime"));
+                if (!isNaN(storedStartTime)) {
+                var currentTime = Date.now();
+                var elapsed = Math.floor((currentTime - storedStartTime) / 1000);
+                var remainingSeconds = 15 * 60 - elapsed;
+
+                if (remainingSeconds <= 0) {
+                    // Timer expired, do not start a new one
+                    console.log("Timer already expired for this user.");
+                } else {
+                    // Resume the timer
+                    var display = document.querySelector('#timer');
+                    if (currentIntervalId) {
+                    clearInterval(currentIntervalId); // Clear previous interval if exists
+                    }
+                    currentIntervalId = startOrResumeTimer(remainingSeconds, display, storedStartTime);
+                }
+                } else {
+                console.error("Invalid stored start time:", storedStartTime);
+                }
+            }
+            }
+        });
+        });
+
+    </script>
+
+</body>
+
+</html>
