@@ -250,9 +250,11 @@ border: 2px solid #1D2F53;
 }
 
 .quantity_checkboxes .radio-box {
-    left: 10px;
-    top: 19px;
+    left: 24px;
+    top: 22px;
 }
+
+
 
 #showMoreDropdown {
 border-radius: 15px;
@@ -300,7 +302,11 @@ display: none;
 
 p.box_title {
 position: relative;
-padding-left: 30px;
+padding-left: 49px;
+}
+
+.extra-coupon-conta {
+    margin-bottom: 28px;
 }
 
 /* Show the indicator (dot/circle) when checked */
@@ -327,9 +333,13 @@ background: #1D2F53;
 } */
 
 
+.quantity_checkboxes p.box_title {
+    margin: 0; 
+}
+
 /* Quantity Checkbox */
 .boxTopRow {
-padding: 8px 12px;
+padding: 10px 12px 12px;
 display: flex;
 align-items: center;
 gap: 20px;
@@ -501,9 +511,9 @@ display: inline-block;
     display: none;
 }
 
-.quantity_checkboxes:has(>input:checked) .bottom_wrap{
+/* .quantity_checkboxes:has(>input:checked) .bottom_wrap{
     display: block;
-}
+} */
 
 .card-body ul {
     margin: 0;
@@ -558,6 +568,7 @@ display: inline-block;
     display: flex;
     justify-content: space-between;
     gap: 15px;
+    text-align: center;
 }
 
 .card-foot svg {
@@ -638,6 +649,46 @@ span.articleName {
     font-weight: 800;
     line-height: 150%; /* 30px */
 }
+
+.whatsapp-contact a.cta_button {
+    padding: 13px 54px;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    border-radius: 33px;
+    background: #00A341;
+    transition: all .3s ease-in-out;
+    border: 1.5px solid transparent;
+    display: inline-block;
+    box-sizing: border-box !important;
+    text-decoration: none;
+}
+
+.whatsapp-contact a.cta_button:hover {
+    color: #00A341;
+    background: #fff;
+    border: 1.5px solid #00A341;
+    transition: all .3s ease-in-out;
+}
+
+.whatsapp-contact .button-wrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+@media (max-width: 420px){
+    .whatsapp-contact a.cta_button {
+        padding: 13px 10px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
 @media (min-width: 768px) {
     .quantity_checkboxes .bottom_wrap {
         margin-top: 20px;
@@ -667,9 +718,8 @@ height: auto;
 
 /* Main Form Starts */
 .form-info {
-padding: 16px 0;
-margin-bottom: 20px;
-border-bottom: 1px solid #BFC4CE;
+    padding: 6px 0 0;
+    margin-bottom: 10px;
 }
 
 #pillowCheckoutForm .input-box input {
@@ -993,6 +1043,9 @@ padding: 15px 20px 16px 55px;
 }
 label.radio-conta:first-child{
 margin-bottom: 10px;
+}
+p.box_title { 
+    padding-left: 43px;
 }
 /* h1 {
 font-size: 14px;
