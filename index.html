@@ -1813,50 +1813,50 @@ via Cecchi 14
 
 
         function setupQuantityCheckboxHandlers(containerSelector, relatedContainerSelector) {
-    $(containerSelector + " .quantity_checkboxes").each(function() {
-        let $clickedCheckbox = $(this);
-        $clickedCheckbox.click(function() {
-            $(".order_details_conta").show();  
-            let quantity = $clickedCheckbox.find("input[data-quantity]").attr("data-quantity");
+                $(containerSelector + " .quantity_checkboxes").each(function() {
+                    let $clickedCheckbox = $(this);
+                    $clickedCheckbox.click(function() {
+                        $(".order_details_conta").show();  
+                        let quantity = $clickedCheckbox.find("input[data-quantity]").attr("data-quantity");
 
-            // Save the selected quantity to local storage
-            localStorage.setItem('selectedQuantity', quantity);
-            localStorage.setItem('selectedContainer', containerSelector);
+                        // Save the selected quantity to local storage
+                        localStorage.setItem('selectedQuantity', quantity);
+                        localStorage.setItem('selectedContainer', containerSelector);
 
-            // Show corresponding checkboxes and bottom wrap in the related container
-            let $relatedCheckboxes = $(relatedContainerSelector + " .quantity_checkboxes").has(`input[data-quantity="${quantity}"]`);
-            $relatedCheckboxes.find(".bottom_wrap").show();
-            $(relatedContainerSelector + " .quantity_checkboxes").hide();
-            $relatedCheckboxes.show();
+                        // Show corresponding checkboxes and bottom wrap in the related container
+                        let $relatedCheckboxes = $(relatedContainerSelector + " .quantity_checkboxes").has(`input[data-quantity="${quantity}"]`);
+                        $relatedCheckboxes.find(".bottom_wrap").show();
+                        $(relatedContainerSelector + " .quantity_checkboxes").hide();
+                        $relatedCheckboxes.show();
 
-            // Hide all other checkboxes in the same container
-            $(containerSelector + " .quantity_checkboxes").not($clickedCheckbox).hide();
-            
-            $(".show-more-button").show(); 
-        });
-    });
-}
+                        // Hide all other checkboxes in the same container
+                        $(containerSelector + " .quantity_checkboxes").not($clickedCheckbox).hide();
+                        
+                        $(".show-more-button").show(); 
+                    });
+                });
+            }
 
-// Restore checkbox state when the page loads
-$(document).ready(function() {
-    let selectedQuantity = localStorage.getItem('selectedQuantity');
-    let selectedContainer = localStorage.getItem('selectedContainer');
+            // Restore checkbox state when the page loads
+            $(document).ready(function() {
+                let selectedQuantity = localStorage.getItem('selectedQuantity');
+                let selectedContainer = localStorage.getItem('selectedContainer');
 
-    if (selectedQuantity && selectedContainer) {
-        let $checkboxes = $(selectedContainer + " .quantity_checkboxes").has(`input[data-quantity="${selectedQuantity}"]`);
-        $checkboxes.find(`input[data-quantity="${selectedQuantity}"]`).prop('checked', true).change(); // Directly check the radio button and trigger change event
+                if (selectedQuantity && selectedContainer) {
+                    let $checkboxes = $(selectedContainer + " .quantity_checkboxes").has(`input[data-quantity="${selectedQuantity}"]`);
+                    $checkboxes.find(`input[data-quantity="${selectedQuantity}"]`).prop('checked', true).change(); // Directly check the radio button and trigger change event
+                    $checkboxes.click(); 
+                    // Additional actions based on the restored state
+                    $(selectedContainer + " .quantity_checkboxes").not($checkboxes).hide();
+                    $(selectedContainer + " .order_details_conta").show();
+                    $checkboxes.find(".bottom_wrap").show();
+                    $(".show-more-button").show();
+                }
+            }); 
 
-        // Additional actions based on the restored state
-        $(selectedContainer + " .quantity_checkboxes").not($checkboxes).hide();
-        $(selectedContainer + " .order_details_conta").show();
-        $checkboxes.find(".bottom_wrap").show();
-        $(".show-more-button").show();
-    }
-});
-
-// Setup event handlers for each set of quantity checkboxes
-setupQuantityCheckboxHandlers(".cuscinoMemory_quantity", ".cuscinoMemoryBio_quantity");
-setupQuantityCheckboxHandlers(".cuscinoMemoryBio_quantity", ".cuscinoMemory_quantity");
+            // Setup event handlers for each set of quantity checkboxes
+            setupQuantityCheckboxHandlers(".cuscinoMemory_quantity", ".cuscinoMemoryBio_quantity");
+            setupQuantityCheckboxHandlers(".cuscinoMemoryBio_quantity", ".cuscinoMemory_quantity");
  
             
 
