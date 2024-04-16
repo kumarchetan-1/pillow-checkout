@@ -1754,12 +1754,22 @@ via Cecchi 14
             quantity = $(this).data('quantity'); 
             pillowType = $(this).data('pillow'); 
             discountPercent = $(this).data('discount')
+            $(`.cuscinoMemoryBio_quantity input[data-quantity="${quantity}"]`).prop('checked', true)
+            // $(`input[data-quantity="${quantity}"]`).parent(".quantity_checkboxes").find(".bottom_wrap").show()
             orderDetails(mrpPerPillow, pillowType, quantity, discountPercent, imageSrc);
         });
 
         // Handle quantityMemoryBio change
         $('input[name="quantityMemoryBio"]').change(function () {
             mrpPerPillow = $(this).val();
+            // $(this).val();
+            quantity = $(this).data('quantity'); 
+            pillowType = $(this).data('pillow'); 
+            discountPercent = $(this).data('discount')
+            // $(`.cuscinoMemory_quantity .quantity_checkboxes`).hide() 
+            // $(`.cuscinoMemory_quantity input[data-quantity="${quantity}"]`).parent(".quantity_checkboxes").show() 
+            $(`.cuscinoMemory_quantity input[data-quantity="${quantity}"]`).prop('checked', true)
+            // $(`.cuscinoMemory_quantity input[data-quantity="${quantity}"]`).parent(".quantity_checkboxes").find(".bottom_wrap").show() 
             let featuredImg = this.parentElement.querySelector('.image_col');
             let imageSrc;
                 // Check if imageCol exists
@@ -1769,9 +1779,7 @@ via Cecchi 14
             } else {
                 console.log("image not found.");
             }
-            quantity = $(this).data('quantity'); 
-            pillowType = $(this).data('pillow'); 
-            discountPercent = $(this).data('discount')
+            
             orderDetails(mrpPerPillow, pillowType, quantity, discountPercent, imageSrc);
         }); 
 
@@ -1804,24 +1812,53 @@ via Cecchi 14
         $('input[name="' + defaultQuantityRadio + '"]:checked').change();
 
 
-        $(".cuscinoMemory_quantity .quantity_checkboxes").each(function() {
-            let $clickedCheckbox = $(this);
-            $clickedCheckbox.click(function() {
-                $(".order_details_conta").show();  
-                $(".cuscinoMemory_quantity .quantity_checkboxes").not($clickedCheckbox).hide();
-                $(".show-more-button").show() 
-            });
+        function setupQuantityCheckboxHandlers(containerSelector, relatedContainerSelector) {
+    $(containerSelector + " .quantity_checkboxes").each(function() {
+        let $clickedCheckbox = $(this);
+        $clickedCheckbox.click(function() {
+            $(".order_details_conta").show();  
+            let quantity = $clickedCheckbox.find("input[data-quantity]").attr("data-quantity");
+
+            // Save the selected quantity to local storage
+            localStorage.setItem('selectedQuantity', quantity);
+            localStorage.setItem('selectedContainer', containerSelector);
+
+            // Show corresponding checkboxes and bottom wrap in the related container
+            let $relatedCheckboxes = $(relatedContainerSelector + " .quantity_checkboxes").has(`input[data-quantity="${quantity}"]`);
+            $relatedCheckboxes.find(".bottom_wrap").show();
+            $(relatedContainerSelector + " .quantity_checkboxes").hide();
+            $relatedCheckboxes.show();
+
+            // Hide all other checkboxes in the same container
+            $(containerSelector + " .quantity_checkboxes").not($clickedCheckbox).hide();
+            
+            $(".show-more-button").show(); 
         });
+    });
+}
 
+// Restore checkbox state when the page loads
+$(document).ready(function() {
+    let selectedQuantity = localStorage.getItem('selectedQuantity');
+    let selectedContainer = localStorage.getItem('selectedContainer');
 
-        $(".cuscinoMemoryBio_quantity .quantity_checkboxes").each(function() {
-            let $clickedCheckbox = $(this);
-            $clickedCheckbox.click(function() {
-                $(".order_details_conta").show();  
-                $(".cuscinoMemoryBio_quantity .quantity_checkboxes").not($clickedCheckbox).hide();
-                $(".show-more-button").show() 
-            });
-        }); 
+    if (selectedQuantity && selectedContainer) {
+        let $checkboxes = $(selectedContainer + " .quantity_checkboxes").has(`input[data-quantity="${selectedQuantity}"]`);
+        $checkboxes.find(`input[data-quantity="${selectedQuantity}"]`).prop('checked', true).change(); // Directly check the radio button and trigger change event
+
+        // Additional actions based on the restored state
+        $(selectedContainer + " .quantity_checkboxes").not($checkboxes).hide();
+        $(selectedContainer + " .order_details_conta").show();
+        $checkboxes.find(".bottom_wrap").show();
+        $(".show-more-button").show();
+    }
+});
+
+// Setup event handlers for each set of quantity checkboxes
+setupQuantityCheckboxHandlers(".cuscinoMemory_quantity", ".cuscinoMemoryBio_quantity");
+setupQuantityCheckboxHandlers(".cuscinoMemoryBio_quantity", ".cuscinoMemory_quantity");
+ 
+            
 
         $(".show-more-button").click(function(e){
             e.preventDefault();
@@ -1934,7 +1971,7 @@ via Cecchi 14
     let currentIntervalId; // Variable to hold the current interval ID
     radioButtons.forEach(function(radioButton) {
     radioButton.addEventListener('click', function() {
-        $(this).find(".bottom_wrap").slideToggle();
+        $(this).find(".bottom_wrap").show();
         if (!hasTimerStarted()) {
         setUserIPAndStartTime();
         let minutes = 15 * 60; // 15 minutes 
