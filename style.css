@@ -169,7 +169,7 @@ header h2 {
 color: #fff;
 font-size: 16px;
 font-style: normal;
-font-weight: 800;
+font-weight: 700;
 line-height: 150%;
 /* 24px */
 }
@@ -339,7 +339,7 @@ background: #1D2F53;
 
 /* Quantity Checkbox */
 .boxTopRow {
-padding: 10px 12px 12px;
+padding: 10px 12px 11px;
 display: flex;
 align-items: center;
 gap: 20px;
@@ -375,7 +375,7 @@ padding: 12px;
     padding: 0;
     list-style: none;
     margin: 0;
-    margin-bottom: 10px;
+    margin-bottom: 5px; 
 }
 
 .quantity_checkboxes p {
@@ -534,7 +534,7 @@ display: inline-block;
     font-style: normal;
     font-weight: 700;
     line-height: 150%; /* 22.5px */
-    margin-bottom: 10px;
+    margin-bottom: 2px;
 }
 
 .title-conta {
@@ -564,7 +564,7 @@ display: inline-block;
 .card-foot {
     border-radius: 0px 0px 8px 8px;
     background: #FFD541;
-    padding: 20px 15px;
+    padding: 10px 15px;
     display: flex;
     justify-content: space-between;
     gap: 15px;
@@ -706,14 +706,32 @@ max-width: 220px;
 .quantity_checkboxes .main_conta {
 gap: 15px;
 }
+.timer-text.align-center {
+    font-family: Lato;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 0.02em;
+}
 
+.quantity_checkboxes p{
+font-size: 16px; 
+}
+.discount_conta {
+    padding: 2px 8px;
+}
 }
 
 @media (max-width: 450px) {
 .image_col img {
 width: 100%;
 height: auto;
+max-width: 72px;
 }
+.main-wrap {
+    padding: 6px 12px; 
+}
+
 }
 
 /* Main Form Starts */
@@ -850,7 +868,7 @@ line-height: 150%;
 /* 24px */
 }
 
-.inputContainer {
+.inputContainer { 
 position: relative;
 display: flex;
 flex-direction: column-reverse;
@@ -883,8 +901,8 @@ min-width: 48%;
 }
 
 .inputContainer input {
-padding-bottom: 13px;
-padding-top: 19px;
+padding-bottom: 14px;
+padding-top: 15px;
 }
 
 /* Custom Checkbox */
@@ -1038,11 +1056,11 @@ justify-content: center;
 }
 
 label.radio-conta{
-padding: 15px 20px 16px 55px;
+padding: 10px 20px 10px 55px;
 /* font-size: 16px;  */
 }
 label.radio-conta:first-child{
-margin-bottom: 10px;
+margin-bottom: 5px; 
 }
 p.box_title { 
     padding-left: 43px;
@@ -1061,7 +1079,28 @@ height: 15px;
 width: 15px;
 }
 #hero-banner{
-padding-top: 20px;
+padding-top: 5px; 
+}
+
+.radio-conta {
+    margin-bottom: 6px;
+}
+
+header {
+    padding: 10px 0;
+}
+
+.image_col {
+    flex-basis: 25%; 
+}
+
+.mb20 {
+    margin-bottom: 5px;
+}
+
+.top-title, h1,
+.two-col{
+    margin-bottom: 4px;
 }
 
 }
@@ -1334,21 +1373,21 @@ h2 {
 font-size: 21px;
 }
 
-.inputContainer label {
+/* .inputContainer label {
 font-size: 13px;
 top: -4px;
-}
+} */
 
-input[type="text"],
+/* input[type="text"],
 input[type="number"],
 input[type="tel"],
 select#provincia {
 font-size: 14px;
-}
+} */
 }
 
-@media (max-width:300px) {
-.inputContainer label {
+@media (max-width:350px) {
+/* .inputContainer label {
 font-size: 11px;
 top: -3px;
 }
@@ -1358,6 +1397,18 @@ input[type="number"],
 input[type="tel"],
 select#provincia {
 font-size: 12px;
+} */
+p.total_price {
+    margin: 0;  
+}
+.main-wrap {
+    padding: 6px 5px;
+}
+.quantity_checkboxes .main_conta {
+    gap: 10px; 
+}
+.quantity_checkboxes .bottom_wrap{
+    margin-top: 10px; 
 }
 }
 
